@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint-staged:all": "pnpm -r run lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "server:lb-service": "pnpm --filter @server/leaderboard-service",
+    "server:lb-service:dev": "pnpm --filter @server/leaderboard-service run dev",
+    "server:lb-service:start": "pnpm --filter @server/leaderboard-service run start",
+    "server:ws-service": "pnpm --filter @server/ws-service",
+    "server:ws-service:dev": "pnpm --filter @server/ws-service run dev",
+    "server:ws-service:start": "pnpm --filter @server/ws-service run start"
   },
   "keywords": [],
   "author": "",
