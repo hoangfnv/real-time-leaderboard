@@ -11,7 +11,10 @@
     "server:lb-service:start": "pnpm --filter @server/leaderboard-service run start",
     "server:ws-service": "pnpm --filter @server/ws-service",
     "server:ws-service:dev": "pnpm --filter @server/ws-service run dev",
-    "server:ws-service:start": "pnpm --filter @server/ws-service run start"
+    "server:ws-service:start": "pnpm --filter @server/ws-service run start",
+    "app:quiz-web": "pnpm --filter @client/real-time-quiz-web",
+    "app:quiz-web:start": "pnpm --filter @client/real-time-quiz-web^... run build && pnpm --filter @client/real-time-quiz-web run dev",
+    "app:quiz-web:build": "pnpm --filter @client/real-time-quiz-web^... run build && pnpm --filter @client/real-time-quiz-web run dev"
   },
   "keywords": [],
   "author": "",
